@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아산병원(모바일)</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <button class="m_menu">전체메뉴</button>
+        <h1>
+            <a href="index.html">아산병원</a> 
+        </h1>
+        <button class="m_search">검색버튼</button>
+    </header>
+    <main>
+        <div class="slider">
+            <!-- Slider main container -->
+              <div class="swiper">
+               <!-- Additional required wrapper -->
+             <div class="swiper-wrapper">
+             <!-- Slides -->
+              <div class="swiper-slide"><img src="./images/mo_main.jpg" alt="배너 이미지 1"></div>
+             <div class="swiper-slide"><img src="./images/main_newsroom_640.jpg" alt="배너 이미지 2"> </div>
+              <div class="swiper-slide"><img src="./images/main_visual_640.jpg" alt="배너 이미지 3"></div>
+             </div>
+             <!-- If we need pagination -->
+             <!-- 페이지 버튼 -->
+              <div class="swiper-pagination"></div>
+  
+             <!-- If we need navigation buttons -->
+             <!-- 왼쪽 버튼 -->
+             <div class="swiper-button-prev"></div>  
+              <!-- 오른쪽 버튼 -->    
+             <div class="swiper-button-next"></div> 
+             <!-- If we need scrollbar -->
+             <!-- <div class="swiper-scrollbar"></div> -->
+           </div>
+             <!-- <div class="visual">
+            <img src="./images/Frame 2.png" alt="메인이미지">
+             </div> -->
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script>
+        const swiper = new Swiper('.swiper', {
+         // Optional parameters
+        //  슬라이드방향 1. 좌우hofizontal 2. 상하 vertical 3. fade in-out 
+        // effect: 'fade',
+        direction: 'horizontal',
+         loop: true,
+            
+        //  슬라이드 자동실행
+        autoplay: {
+        delay: 2000,
+          },
+
+        // If we need pagination
+        // 페이지 버튼
+        pagination: {
+           el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+         },
+
+         // And if we need scrollbar
+        //  스크로바
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        //   },
+        });
+    </script>
+    <footer>
+        <ul class="footer_info">
+            <li><a href="#">오시는 길</a> </li>
+            <li><a href="#">모바일 진료카드</a> </li>
+            <li><a href="#">진료/검사결과 조회</a> </li>
+        </ul>
+
+    </footer>
+    
+</body>
+</html>
